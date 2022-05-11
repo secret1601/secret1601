@@ -9,7 +9,7 @@
 
 <br/>
 <h3>ABILITY AND HARMONY 🥳</h3><br/>
-Hello, I'm Heejun.<br/>
+Hello, I'm Hee-jun.<br/>
 My goal is to be a harmonious developer.
 Have a happy day today.
 
