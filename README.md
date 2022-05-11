@@ -6,10 +6,10 @@
 <div align = "center">
 
 <br/>
-<h3>Joyful Joy 🥳</h3><br/>
-Hello, I'm Juhee (Joy).<br/>
-My goal is to give good influence to society.<br/>
-Have a day full of JOY today.
+<h3>ABILITY AND HARMONY 🥳</h3><br/>
+Hello, I'm Heejun (Joy).<br/>
+My goal is to be a harmonious developer.
+Have a happy day today.
 
 
 <br/><br/>
