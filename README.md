@@ -2,7 +2,7 @@
 
 
 
-![header](https://capsule-render.vercel.app/api?type=waving&section=header&text=Hee-Jun%20Leeº&color=gradient&height=400&section=header&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=waving&section=header&text=Hee-Jun%20Leeº&color=gradient&height=200&section=header&fontSize=90)
 
 
 <div align = "center">
