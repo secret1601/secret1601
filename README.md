@@ -1,6 +1,6 @@
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsecret1601%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=letterboxd.svg&icon_color=%23E50909&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsecret1601%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=letterboxd.svg&icon_color=%23E50909&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsecret1601%2Fhit-counter&count_bg=%235AE71F&title_bg=%23F11212&icon=apple.svg&icon_color=%23EFFF00&title=VISIT&edge_flat=false)](https://hits.seeyoufarm.com)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsecret1601%2Fhit-counter&count_bg=%235AE71F&title_bg=%23F11212&icon=apple.svg&icon_color=%23EFFF00&title=VISIT&edge_flat=false)](https://hits.seeyoufarm.com)
+
 
 ![header](https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=header&fontSize=90)
 
