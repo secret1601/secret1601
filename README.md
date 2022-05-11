@@ -1,8 +1,8 @@
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsecret1601%2Fhit-counter&count_bg=%2379C83D&title_bg=23424%23555555&icon=letterboxd.svg&icon_color=%23E50909&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsecret1601%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=letterboxd.svg&icon_color=%23E50909&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) 
 
 
 
-![header](https://capsule-render.vercel.app/api?type=waving&section=header&text=Hee-Jun%20Leeº&color=gradient&height=100&section=header&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=waving&section=header&text=Hee-Jun%20Leeº&color=gradient&height=400&section=header&fontSize=90)
 
 
 <div align = "center">
