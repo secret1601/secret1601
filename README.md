@@ -1,240 +1,318 @@
-# Specification
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=capsule%20render&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Decorate%20GitHub%20Profile%20or%20any%20Repo%20like%20me!&descAlignY=51&descAlign=62)
+<p align='center'> Decorate GitHub Profile or any Repo like me! </p>
+<p align='center'>
+  <a href="https://github.com/kyechan99/capsule-render/labels/Idea">
+    <img src="https://img.shields.io/badge/IDEA%20ISSUE%20-%23F7DF1E.svg?&style=for-the-badge&&logoColor=white"/>
+  </a>
+  <a href="#demo">
+    <img src="https://img.shields.io/badge/DEMO%20-%234FC08D.svg?&style=for-the-badge&&logoColor=white"/>
+  </a>
+</p>
 
-A compliant README must satisfy all the requirements listed below.
+## Navigation
+1. [How to Use](#how-to-use)
+2. [Types](#types)
+3. [Color](#color)
+4. [Custom Color List](#custom-color-list)
+5. [Section](#section)
+6. [Reversal](#reversal)
+7. [Height](#height)
+8. [Text](#text)
+9. [Desc](#desc)
+10. [Text Background](#text-background)
+11. [Text Animation](#text-animation)
+12. [Font Color](#fontcolor)
+13. [Font Size](#fontsize)
+14. [Font Align - X](#fontalign)
+15. [Font Align - Y](#fontaligny)
+16. [Desc Size](#descsize)
+17. [Desc Align - X](#descalign)
+18. [Desc Align - Y](#descaligny)
+19. [Rotate](#rotate)
+20. [Demo](#demo)
 
-> Note: Standard Readme is designed for open source libraries. Although it's [historically](README.md#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
+Any of Idea -> [Idea-Issue](https://github.com/kyechan99/capsule-render/labels/Idea) or [PR](https://github.com/kyechan99/capsule-render/pulls)
 
-**Requirements:**
-  - Be called README.md (with capitalization).
-  - If the project supports i18n, the file must be named accordingly: `README.de.md`, where `de` is the BCP 47 Language tag. For naming, prioritize non-regional subtags for languages. If there is only one README and the language is not English, then a different language in the text is permissible without needing to specify the BCP tag: e.g., `README.md` can be in German if there is no `README.md` in another language. Where there are multiple languages, `README.md` is reserved for English.
-  - Be a valid Markdown file.
-  - Sections must appear in order given below. Optional sections may be omitted.
-  - Sections must have the titles listed below, unless otherwise specified. If the README is in another language, the titles must be translated into that language.
-  - Must not contain broken links.
-  - If there are code examples, they should be linted in the same way as the code is linted in the rest of the project.
+# How to Use
+```
+https://capsule-render.vercel.app/api?
+```
+Just write query parameter end of this url. Like this
 
-## Table of Contents
+Markdown:
+```
+![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90)
+```
 
-_Note: This is only a navigation guide for the specification, and does not define or mandate terms for any specification-compliant documents._
+HTML:
+```
+<img src="https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90" />
+```
 
-- [Sections](#sections)
-  - [Title](#title)
-  - [Banner](#banner)
-  - [Badges](#badges)
-  - [Short Description](#short-description)
-  - [Long Description](#long-description)
-  - [Table of Contents](#table-of-contents-1)
-  - [Security](#security)
-  - [Background](#background)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Extra Sections](#extra-sections)
-  - [API](#api)
-  - [Maintainers](#maintainers)
-  - [Thanks](#thanks)
-  - [Contributing](#contributing)
-  - [License](#license)
-- [Definitions](#definitions)
+## Types
+Type data makes to change Background Image.
+- [wave](#wave) : default
+- [egg](#egg)
+- [shark](#shark)
+- [slice](#slice)
+- [rect](#rect)
+- [soft](#soft)
+- [rounded](#rounded)
+- [cylinder](#cylinder)
+- [waving](#waving)
+- [transparent](#transparent)
 
-## Sections
+Write `&type= ` on the URL
+```
+![header](https://capsule-render.vercel.app/api?type=slice)
+```
 
-### Title
-**Status:** Required.
+## Color
+Change Background Image!
+- `&color=auto` : Proven random color. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/pallete.json)
+- `&color=timeAuto` : Proven random color, but is decided by time.
+- `&color=random` : Really random color. I don't know what colors are showing.
+- `&color=gradient` : Proven random gradient. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/gradient.json)
+- `&color=timeGradient` : Proven random gradient, but is decided by time.
+- `&color=_hexcode` : default(#B897FF)
+- `&color=_custom_gradient` : Custom gradient. If write as `&color=0:EEFF00,100:a82da8`, it will be converted to { 0%: 'EEFF00', 100%: 'a82da8' }. (e.g. [DEMO](https://capsule-render.vercel.app/api?type=rect&color=0:EEFF00,100:a82da8))
 
-**Requirements:**
-- Title must match repository, folder and package manager names - or it may have another, relevant title with the repository, folder, and package manager title next to it in italics and in parentheses. For instance:
+If you use `auto` mode. no need to change `fontColor`. 
+`auto` also change fontColor auto.
 
-  ```markdown
-  # Standard Readme Style _(standard-readme)_
-  ```
+```
+![header](https://capsule-render.vercel.app/api?color=auto)
+```
+> If you use static color. Do not write '#'
 
-  If any of the folder, repository, or package manager names do not match, there must be a note in the [Long Description](#long-description) explaining why.
+> When use `timeAuto` and `timeGradient`?
+>
+> Used section `header` and `footer` at the same time. 
 
-**Suggestions:**
-- Should be self-evident.
+## Custom Color List
+You can **customize the list of colors** that will appear randomly only for `&color=auto` and `&color=gradient`.
 
-### Banner
-**Status:** Optional.
+Write `&customColorList= ` on the URL.
 
-**Requirements:**
-- Must not have its own title.
-- Must link to local image in current repository.
-- Must appear directly after the title.
+- If you use `&color=auto`, look at [pallete list](https://github.com/kyechan99/capsule-render/blob/master/src/pallete.json).
+- If you use `&color=gradient`, look at [gradient list](https://github.com/kyechan99/capsule-render/blob/master/src/gradient.json).
 
-### Badges
-**Status:** Optional.
+Pick the color patterns you want and remember the `idx` value.
 
-**Requirements:**
-- Must not have its own title.
-- Must be newline delimited.
+For example, if the idx values ​​are 0, 2, and 3, write: `&customColorList=0,2,3`
 
-**Suggestions:**
-- Use http://shields.io or a similar service to create and host the images.
-- Add the [Standard Readme badge](https://github.com/RichardLitt/standard-readme#badge).
+If you want to make many apperances of `idx=2`, you can write them repeatedly. (e.g. `&customColorList=0,2,2,2,2,3`)
 
-### Short Description
-**Status:** Required.
+```
+![header](https://capsule-render.vercel.app/api?color=gradient&customColorList=0,2,2,5,30)
+```
 
-**Requirements:**
-- Must not have its own title.
-- Must be less than 120 characters.
-- Must not start with `> `
-- Must be on its own line.
-- Must match the description in the packager manager's `description` field.
-- Must match GitHub's description (if on GitHub).
+## Section
+Section data makes reverse Background Image.
+- `&section=header` : (default)
+- `&section=footer`
 
-**Suggestions:**
-- Use [gh-description](https://github.com/RichardLitt/gh-description) to set and get GitHub description.
-- Use `npm show . description` to show the description from a local [npm](https://npmjs.com) package.
+Write `&section= ` on the URL
+```
+![footer](https://capsule-render.vercel.app/api?section=footer)
+```
 
-### Long Description
-**Status:** Optional.
+## Reversal
+Reverse the image left and right. (Color at the same time)
+- `&reversal=false` : (default)
+- `&reversal=true`
 
-**Requirements:**
-- Must not have its own title.
-- If any of the folder, repository, or package manager names do not match, there must be a note here as to why. See [Title section](#title).
+```
+![reversal](https://capsule-render.vercel.app/api?type=slice&reversal=true&color=gradient)
+```
 
-**Suggestions:**
-- If too long, consider moving to the [Background](#background) section.
-- Cover the main reasons for building the repository.
-- "This should describe your module in broad terms,
-generally in just a few paragraphs; more detail of the module's
-routines or methods, lengthy code examples, or other in-depth
-material should be given in subsequent sections.
+## Height
+Change Image Size. Default value is 120.
 
-  Ideally, someone who's slightly familiar with your module should be
-able to refresh their memory without hitting "page down". As your
-reader continues through the document, they should receive a
-progressively greater amount of knowledge."
+Write `&height= ` on the URL
+```
+![header](https://capsule-render.vercel.app/api?height=400)
+```
+> Do not write `px`
 
-  ~ [Kirrily "Skud" Robert, perlmodstyle](http://perldoc.perl.org/perlmodstyle.html)
+## Text
+Input text over the Image.
 
-### Table of Contents
-**Status:** Required; optional for READMEs shorter than 100 lines.
+Write Something `&text= `.
 
-**Requirements:**
-- Must link to all Markdown sections in the file.
-- Must start with the next section; do not include the title or Table of Contents headings.
-- Must be at least one-depth: must capture all `##` headings.
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!)
+```
 
-**Suggestions:**
-- May capture third and fourth depth headings. If it is a long ToC, these are optional.
+> You can't use some Special Characters. Like '#', '&', '/' ... 
+>
+> It makes confused API
 
-### Security
-**Status**: Optional.
+> It is recommended to use `%20` (blank) only
 
-**Requirements:**
-- May go here if it is important to highlight security concerns. Otherwise, it should be in [Extra Sections](#extra-sections).
+## Desc
+Input desc over the Image.
 
-### Background
-**Status:** Optional.
+Write Something `&desc= `.
 
-**Requirements:**
-- Cover motivation.
-- Cover abstract dependencies.
-- Cover intellectual provenance: A `See Also` section is also fitting.
+```
+![header](https://capsule-render.vercel.app/api?height=400&text=Hello%20World!&desc=Hello%20capsule%20render)
+```
 
-### Install
-**Status:** Required by default, optional for [documentation repositories](#definitions).
+> You can't use some Special Characters. Like '#', '&', '/' ... 
+>
+> It makes confused API
 
-**Requirements:**
-- Code block illustrating how to install.
+> It is recommended to use `%20` (blank) only
 
-**Subsections:**
-- `Dependencies`. Required if there are unusual dependencies or dependencies that must be manually installed.
+## Text Background
+Background of Text.
 
-**Suggestions:**
-- Link to prerequisite sites for programming language: [npmjs](https://npmjs.com), [godocs](https://godoc.org), etc.
-- Include any system-specific information needed for installation.
-- An `Updating` section would be useful for most packages, if there are multiple versions which the user may interface with.
+Write `&textBg=true` to active.
 
-### Usage
-**Status:** Required by default, optional for [documentation repositories](#definitions).
+> If you want to increase background-size, 
+add `%20` between text values.
+This is because background-size depends on the length of the english-text. (%20 means spacing)
 
-**Requirements:**
-- Code block illustrating common usage.
-- If CLI compatible, code block indicating common usage.
-- If importable, code block indicating both import functionality and usage.
+```
+![header](https://capsule-render.vercel.app/api?type=rounded&color=gradient&text=%20asdf%20&height=300&fontSize=100&textBg=true)
+```
 
-**Subsections:**
-- `CLI`. Required if CLI functionality exists.
+## Text Animation
+Make the text dynamic.
 
-**Suggestions:**
-- Cover basic choices that may affect usage: for instance, if JavaScript, cover promises/callbacks, ES6 here.
-- If relevant, point to a runnable file for the usage code.
+Write `&animation= `, if you want to use.
 
-### Extra Sections
-**Status**: Optional.
+- `fadeIn` : fadeIn 1.2s
+- `scaleIn` : scaleIn .8s
+- `blink` : blink .6s
+- `blinking` : blinking 1.6s
+- `twinkling` : twinkling 4s
 
-**Requirements:**
-- None.
+```
+![header](https://capsule-render.vercel.app/api?text=capsule_render&animation=fadeIn)
+```
 
-**Suggestions:**
-- This should not be called `Extra Sections`. This is a space for 0 or more sections to be included, each of which must have their own titles.
-- This should contain any other sections that are relevant, placed after [Usage](#usage) and before [API](#api).
-- Specifically, the [Security](#security) section should be here if it wasn't important enough to be placed above.
+## FontColor
+Change text color. Default value is 000000
+Value should be Hex code with erased '#'
 
-### API
-**Status:** Optional.
+Write `&fontColor= ` behind **Text** query
 
-**Requirements:**
-- Describe exported functions and objects.
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontColor=d6ace6)
+```
 
-**Suggestions:**
-- Describe signatures, return types, callbacks, and events.
-- Cover types covered where not obvious.
-- Describe caveats.
-- If using an external API generator (like go-doc, js-doc, or so on), point to an external `API.md` file. This can be the only item in the section, if present.
+## FontSize
+Change text font size. Default value is 70.
 
-### Maintainer(s)
-**Status**: Optional.
+Write `&fontSize= ` behind **Text** query
 
-**Requirements:**
-- Must be called `Maintainer` or `Maintainers`.
-- List maintainer(s) for a repository, along with one way of contacting them (e.g. GitHub link or email).
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontSize=40)
+```
 
-**Suggestions:**
-- This should be a small list of people in charge of the repo. This should not be everyone with access rights, such as an entire organization, but the people who should be pinged and who are in charge of the direction and maintenance of the repository.
-- Listing past maintainers is good for attribution, and kind.
+> Do not write `px`
 
-### Thanks
-**Status**: Optional.
+## FontAlign
+Change text horizontal-align (x). write number **between 0~100**
 
-**Requirements:**
-- Must be called `Thanks`, `Credits` or `Acknowledgements`.
+`&fontAlign= ` : Default value is 50. center of image
 
-**Suggestions:**
-- State anyone or anything that significantly helped with the development of your project.
-- State public contact hyper-links if applicable.
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlign=70)
+```
 
-### Contributing
-**Status**: Required.
+## FontAlignY
+Change text vertical-align (y). write number **between 0~100**
 
-**Requirements:**
-- State where users can ask questions.
-- State whether PRs are accepted.
-- List any requirements for contributing; for instance, having a sign-off on commits.
+`&fontAlignY= ` : Default value is 50. center of image
 
-**Suggestions:**
-- Link to a CONTRIBUTING file -- if there is one.
-- Be as friendly as possible.
-- Link to the GitHub issues.
-- Link to a Code of Conduct. A CoC is often in the Contributing section or document, or set elsewhere for an entire organization, so it may not be necessary to include the entire file in each repository. However, it is highly recommended to always link to the code, wherever it lives.
-- A subsection for listing contributors is also welcome here.
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlignY=20)
+```
 
-### License
-**Status:** Required.
+## DescSize
+Change desc font size. Default value is 20.
 
-**Requirements:**
-- State license full name or identifier, as listed on the  [SPDX](https://spdx.org/licenses/) license list. For unlicensed repositories, add `UNLICENSED`. For more details, add `SEE LICENSE IN <filename>` and link to the license file. (These requirements were adapted from [npm](https://docs.npmjs.com/files/package.json#license)).
-- State license owner.
-- Must be last section.
+Write `&descSize= ` behind **desc** query
 
-**Suggestions:**
-- Link to longer License file in local repository.
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontSize=40&desc=Desc&descSize=30)
+```
 
-## Definitions
+> Do not write `px`
 
-_These definitions are provided to clarify any terms used above._
+## DescAlign
+Change desc horizontal-align (x). write number **between 0~100**
 
-- **Documentation repositories**: Repositories without any functional code. For instance, [RichardLitt/knowledge](https://github.com/RichardLitt/knowledge).
+`&descAlign= ` : Default value is 50. center of image
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlign=70&desc=Desc&descAlign=20)
+```
+
+## DescAlignY
+Change text vertical-align (y). write number **between 0~100**
+
+`&descAlignY= ` : Default value is 60. center of image
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlignY=20&desc=Desc&descAlignY=40)
+```
+
+## Rotate
+Usage `&rotate= `, to rotate text.
+
+You can also use negative number.
+
+> Recommend number arrange. ☞ `0 ~ 360`, `0 ~ -360`. 
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontSize=20&rotate=-30)
+```
+
+
+# Demo <a id="demo">
+
+## Wave <a id="wave">
+![wave](https://capsule-render.vercel.app/api?type=wave&color=auto&height=200&text=WAVE)
+
+## Egg <a id="egg">
+![egg](https://capsule-render.vercel.app/api?type=egg&color=auto&height=210)
+
+## Shark <a id="shark">
+![shark](https://capsule-render.vercel.app/api?type=shark&color=gradient&height=140)
+
+## Slice <a id="slice">
+![slice](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&text=SLICE&fontAlign=70&rotate=13&fontAlignY=25&desc=desc%20function%20is%20also%20rotated.&descAlign=70.&descAlignY=44)
+  
+## Rect <a id="rect">
+![rect](https://capsule-render.vercel.app/api?type=rect&color=gradient&text=%20%20RECT%20%20&fontAlign=30&fontSize=30&textBg=true&desc=Use%20%27textBg%27%20to%20highlight%20%27text%27&descAlign=60&descAlignY=50)
+
+## Soft <a id="soft">
+![soft](https://capsule-render.vercel.app/api?type=soft&color=auto&text=Good%20to%20use%20with%20other%20readme&fontSize=40&animation=twinkling)
+
+## Rounded <a id="rounded">
+![rounded](https://capsule-render.vercel.app/api?type=rounded&color=timeAuto&text=Rounded&fontAlignY=50&fontSize=40&height=200)
+
+## Cylinder <a id="cylinder">
+![cylinder](https://capsule-render.vercel.app/api?type=cylinder&color=auto&text=Cylinder&fontAlignY=45&fontSize=40&height=150&animation=blinking&desc=desc%20is%20also%20animated&descAlignY=70)
+
+## Waving <a id="waving">
+![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=Waving!&fontAlign=80&fontAlignY=40&color=gradient)
+
+## Transparent <a id="transparent">
+![transparent](https://capsule-render.vercel.app/api?type=transparent&fontColor=703ee5&text=Transparent&height=150&fontSize=60&desc=Only%20Use%20Text&descAlignY=75&descAlign=60)
+
+
+
+<hr/>
+
+# Things that helped contribute
+
+- SVG Path Easy Maker [Codepen](https://codepen.io/kyechan99/pen/yLeQVBa)
+- SVG Path draw [mavo.io](https://mavo.io/demos/svgpath/)
+
+
+![footer](https://capsule-render.vercel.app/api?type=wave&color=auto&height=200&section=footer&text=Now%20Use%20me!&fontSize=90)
