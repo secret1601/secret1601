@@ -11,10 +11,7 @@ Hello, I'm Heejun.<br/>
 My goal is to be a harmonious developer.
 Have a happy day today.
 
-
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fchajuhui123&count_bg=%23FFD5D5&title_bg=%23FF7575&icon=&icon_color=%23E7E7E7&title=VISIT&edge_flat=false)](https://hits.seeyoufarm.com)
-<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:secret1601@naver.com)](mailto:secret1601@naver.com) -->
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsecret1601%2Fhit-counter&count_bg=%235AE71F&title_bg=%23F11212&icon=apple.svg&icon_color=%23EFFF00&title=VISIT&edge_flat=false)](https://hits.seeyoufarm.com)
 
  
   
